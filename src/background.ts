@@ -1,5 +1,3 @@
-import { DOM_SHOT_EXT_NAME } from "./utils/constant";
-
 let timer = null;
 
 const injectedHelper = (tabId: number) => {
@@ -8,6 +6,7 @@ const injectedHelper = (tabId: number) => {
     target: { tabId },
     world: "MAIN",
     func: (...args) => {
+      const DOM_SHOT_EXT_NAME = 'dom_shot_chrome_extension';
       window[DOM_SHOT_EXT_NAME] = window[DOM_SHOT_EXT_NAME] || {};
       window[DOM_SHOT_EXT_NAME].args = args || [];
     },

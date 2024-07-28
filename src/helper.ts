@@ -18,7 +18,6 @@ class Helper {
 
   initUtils () {
     const messageHandler = async (event: MessageEvent<any>) => {
-      console.log('[dodo] ', 'event', event);
       if (event?.data?.source !== DOM_SHOT_EXT_NAME) return;
 
       const { action } = event.data || {};

@@ -1,5 +1,5 @@
 chrome.devtools.panels.elements.createSidebarPane(
-  'DOM SHOT',
+  'DOM SHOT TOOL',
   function (sidebar) {
     sidebar.setPage('sidebar.html');
 

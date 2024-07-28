@@ -1,5 +1,5 @@
 import { toPng } from 'html-to-image';
-import { DOM_SHOT_EXT_ACTION, DOM_SHOT_EXT_NAME } from './constant';
+import { DOM_SHOT_EXT_ACTION, DOM_SHOT_EXT_BG_NAME } from './constant';
 import { domShotLog } from '.';
 
 /** 给 DOM 截图，保留透明色 */
@@ -13,7 +13,7 @@ export const shotDom = () => {
     backgroundColor: 'transparent'
   }).then(imgData => {
     window.postMessage({
-      source: DOM_SHOT_EXT_NAME,
+      source: DOM_SHOT_EXT_BG_NAME,
       action: DOM_SHOT_EXT_ACTION.domShot,
       payload: imgData
     }, '*');

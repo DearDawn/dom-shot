@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { DOM_SHOT_EXT_ACTION, DOM_SHOT_EXT_NAME } from '../utils/constant';
+import { DOM_SHOT_EXT_ACTION, DOM_SHOT_EXT_BG_NAME } from '../utils/constant';
 import { doDomShotAction, domShotLog } from '../utils';
 
 export const useShot = () => {
@@ -28,7 +28,7 @@ export const useInit = () => {
     const cb = (event: MessageEvent) => {
       const { source, action, payload } = event?.data || {};
 
-      if (source !== DOM_SHOT_EXT_NAME) return;
+      if (source !== DOM_SHOT_EXT_BG_NAME) return;
 
       if (action === DOM_SHOT_EXT_ACTION.domShot) {
         chrome.runtime.sendMessage({
