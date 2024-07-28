@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "DOM SHOT",
+  "description": "DOM SHOT with transparent background",
+  "version": "0.0.2",
+  "action": {
+    "default_icon": "logo.png"
+  },
+  "devtools_page": "devtools.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "tabs",
+    "scripting"
+  ],
+  "commands": {
+    "_execute_action": {}
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "index.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ]
+}
