@@ -30,3 +30,25 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     }, 100);
   }
 });
+
+chrome.runtime.onInstalled.addListener(() => {
+  chrome.declarativeNetRequest.updateDynamicRules({
+    addRules: [
+      {
+        id: 1,
+        priority: 1,
+        action: {
+          type: "modifyHeaders",
+          responseHeaders: [
+            { header: "Access-Control-Allow-Origin", operation: "set", value: "*" }
+          ]
+        },
+        condition: {
+          resourceTypes: ["image"],
+          urlFilter: "*"
+        }
+      }
+    ],
+    removeRuleIds: [1]
+  });
+});

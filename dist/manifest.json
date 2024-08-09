@@ -12,7 +12,9 @@
   },
   "permissions": [
     "tabs",
-    "scripting"
+    "scripting",
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback"
   ],
   "commands": {
     "_execute_action": {}
