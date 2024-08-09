@@ -1,6 +1,6 @@
 {
   "name": "dom-shot-chrome-extension",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "buildTime": "2024-08-09",
   "source": "src/index.html",
   "description": "dom-shot-chrome-extension",
