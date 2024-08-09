@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "DOM SHOT",
   "description": "DOM SHOT with transparent background",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "action": {
     "default_icon": "logo.png"
   },
@@ -22,9 +22,6 @@
     {
       "js": [
         "index.js"
-      ],
-      "matches": [
-        "<all_urls>"
       ]
     }
   ]
