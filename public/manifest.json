@@ -11,6 +11,7 @@
     "service_worker": "background.js"
   },
   "permissions": [
+    "activeTab",
     "scripting",
     "declarativeNetRequest"
   ],
@@ -26,8 +27,5 @@
         "<all_urls>"
       ]
     }
-  ],
-  "host_permissions": [
-    "*://*/*"
   ]
 }
