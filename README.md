@@ -2,4 +2,4 @@
 
 DOM截图（保留透明度）
 
-<img width="1800" alt="image" src="https://github.com/user-attachments/assets/b679a49e-0dc8-4ad6-81f3-8991ef54a3db">
+![1723175537629](https://github.com/user-attachments/assets/ac77f8df-817f-4db4-8a18-5726172a3c3a)
