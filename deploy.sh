@@ -3,5 +3,5 @@ cp -r public/* dist
 name="./dom_shot_ext_v0.1.4"
 mkdir "$name"
 cp -r dist/* "./$name"
-zip -q -r "./dist/$name.zip" "./$name"
+zip -q -r "./$name.zip" "./$name"
 rm -rf "./$name"
