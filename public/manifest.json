@@ -31,5 +31,12 @@
         "http://*/"
       ]
     }
+  ],
+  "host_permissions": [
+    "file:///",
+    "https://*/*",
+    "https://*/",
+    "http://*/*",
+    "http://*/"
   ]
 }
