@@ -19,6 +19,8 @@ const App = () => {
     if (!button) return;
 
     const listener1 = () => {
+      if (!imgSrc) return;
+
       const a = document.createElement('a');
       a.href = imgSrc;
       a.download = 'captured-image.png';
@@ -45,7 +47,7 @@ const App = () => {
       button.removeEventListener('click', listener1);
       chrome.runtime.onMessage.removeListener(listener2);
     };
-  }, []);
+  }, [imgSrc]);
 
   return (
     <div>
