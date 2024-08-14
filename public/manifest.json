@@ -13,7 +13,8 @@
   "permissions": [
     "activeTab",
     "scripting",
-    "declarativeNetRequest"
+    "declarativeNetRequest",
+    "webRequest"
   ],
   "commands": {
     "_execute_action": {}

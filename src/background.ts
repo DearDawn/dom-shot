@@ -45,7 +45,7 @@ chrome.runtime.onInstalled.addListener(() => {
         },
         condition: {
           resourceTypes: ["image"],
-          urlFilter: "*"
+          regexFilter: "^(?!(https://pintu)).*"
         }
       }
     ],
